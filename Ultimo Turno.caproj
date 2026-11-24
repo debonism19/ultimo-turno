@@ -1,0 +1,690 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2project>
+    <name>Ultimo Turno</name>
+    <description></description>
+    <version>1.0.0.0</version>
+    <author></author>
+    <author-email></author-email>
+    <author-website>http://</author-website>
+    <app-id>com.mycompany.myapp</app-id>
+    <unique-id>2m2oqhlgof90t</unique-id>
+    <saved-with-version>28000</saved-with-version>
+    <used-plugins>
+        <plugin author="Scirra" id="AJAX" version="1">AJAX</plugin>
+        <plugin author="Scirra" id="Arr" version="1">Array</plugin>
+        <plugin author="Scirra" id="Audio" version="1">Audio</plugin>
+        <plugin author="Scirra" id="Dictionary" version="1">Dictionary</plugin>
+        <plugin author="Scirra" id="Function" version="1">Function</plugin>
+        <plugin author="Scirra" id="Keyboard" version="1">Keyboard</plugin>
+        <plugin author="Scirra" id="Mouse" version="1">Mouse</plugin>
+        <plugin author="Scirra" id="Sprite" version="1">Sprite</plugin>
+        <plugin author="Scirra" id="Text" version="1">Text</plugin>
+        <plugin author="Scirra" id="TiledBg" version="1">Tiled Background</plugin>
+    </used-plugins>
+    <used-behaviors>
+        <behavior author="Scirra" id="EightDir" version="1">8 Direction</behavior>
+        <behavior author="Scirra" id="bound" version="1">Bound to layout</behavior>
+        <behavior author="Scirra" id="scrollto" version="1">Scroll To</behavior>
+        <behavior author="Scirra" id="shadowcaster" version="1">Shadow Caster</behavior>
+        <behavior author="Scirra" id="solid" version="1">Solid</behavior>
+    </used-behaviors>
+    <used-effects />
+    <configurations>
+        <configuration exporter-descname="HTML5" exporter-id="html5" name="HTML5" />
+    </configurations>
+    <window-size>
+        <width>640</width>
+        <height>480</height>
+    </window-size>
+    <pixel-rounding>1</pixel-rounding>
+    <preview-effects>1</preview-effects>
+    <use-loader-layout>0</use-loader-layout>
+    <configuration-settings>
+        <prop name="Clear background">Yes</prop>
+        <prop name="Enable WebGL">On</prop>
+        <prop name="Fullscreen in browser">Letterbox scale</prop>
+        <prop name="Fullscreen scaling">High quality</prop>
+        <prop name="Loader style">Progress bar &amp; logo</prop>
+        <prop name="Orientations">Landscape</prop>
+        <prop name="Pause on unfocus">No</prop>
+        <prop name="Physics engine">Box2D asm.js</prop>
+        <prop name="Preview browser">(default)</prop>
+        <prop name="Sampling">Point</prop>
+        <prop name="Use high-DPI display">Yes</prop>
+    </configuration-settings>
+    <object-folder>
+        <object-type name="Iris" sid="743355209506034">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="8Direction" sid="812599574367435">
+                    <behavior id="EightDir" />
+                </behavior-type>
+                <behavior-type name="ScrollTo" sid="262110645894440">
+                    <behavior id="scrollto" />
+                </behavior-type>
+                <behavior-type name="BoundToLayout" sid="661543599461090">
+                    <behavior id="bound" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Frente" pingpong="0" repeatcount="1" repeatto="0" sid="987922223437238" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.5" />
+                </animation>
+                <animation framecount="4" loop="1" name="FrenteAndando" pingpong="0" repeatcount="1" repeatto="0" sid="809835176963130" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.5" original-source="C:\Users\marco\Downloads\Iris\Frente\Iris - FrenteAndar1.png" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.5" original-source="C:\Users\marco\Downloads\Iris\Frente\Iris- FrenteAndar2.png" />
+                </animation>
+                <animation framecount="4" loop="1" name="CostasAndando" pingpong="0" repeatcount="1" repeatto="0" sid="125423241780944" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.5" original-source="C:\Users\marco\Downloads\Iris\Costa\Iris - Costas.png" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.5" original-source="C:\Users\marco\Downloads\Iris\Costa\Iris- CostasAndar2.png" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.5" original-source="C:\Users\marco\Downloads\Iris\Costa\Iris- CostasAndar1.png" />
+                </animation>
+                <animation framecount="4" loop="1" name="DireitaAndando" pingpong="0" repeatcount="1" repeatto="0" sid="918415247451279" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.5" original-source="C:\Users\marco\Downloads\Iris\Esquerda\Iris - Esquerda.png" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.5" original-source="C:\Users\marco\Downloads\Iris\Direira\Iris - DireitaAndar2.png" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.5" original-source="C:\Users\marco\Downloads\Iris\Direira\Iris - DireitaAndar1.png" />
+                </animation>
+                <animation framecount="4" loop="1" name="EsquerdaAndando" pingpong="0" repeatcount="1" repeatto="0" sid="245368668419299" speed="5">
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.5" original-source="C:\Users\marco\Downloads\Iris\Esquerda\Iris - Esquerda.png" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.5" original-source="C:\Users\marco\Downloads\Iris\Esquerda\Iris - EsquerdaAndar1.png" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.533333" hotspotY="0.5" original-source="C:\Users\marco\Downloads\Iris\Esquerda\Iris - EsquerdaAndar2.png" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="parede" sid="213190183943503">
+            <plugin id="TiledBg" />
+            <behaviors>
+                <behavior-type name="Solid" sid="984367934269763">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <texture original-source="C:\Users\marco\Downloads\machines\tilesets\wall 16x16.png" />
+        </object-type>
+        <object-type name="Keyboard" sid="796647312837550">
+            <plugin id="Keyboard" />
+        </object-type>
+        <object-type name="chao" sid="775567278190520">
+            <plugin id="TiledBg" />
+            <texture original-source="C:\Users\marco\Downloads\machines\tilesets\floor tiles 15x15.png" />
+        </object-type>
+        <object-type name="armario1" sid="953537360794937">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="840545675939434" speed="5">
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.5" original-source="C:\Users\marco\Downloads\machines\lockers\locker1.png">
+                        <collision-poly>
+                            <point x="0.0526316" y="0.0357143" />
+                            <point x="0.473684" y="0" />
+                            <point x="0.947368" y="0.0357143" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="armario2" sid="882281271634825">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="436461658914819" speed="5">
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.5" original-source="C:\Users\marco\Downloads\machines\lockers\locker2.png">
+                        <collision-poly>
+                            <point x="0.0526316" y="0.0357143" />
+                            <point x="0.473684" y="0" />
+                            <point x="0.947368" y="0.0357143" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="armario3" sid="616804603574699">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="ShadowCaster" sid="642020875290735">
+                    <behavior id="shadowcaster" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="395906292220723" speed="5">
+                    <frame duration="1" hotspotX="0.526316" hotspotY="0.5" original-source="C:\Users\marco\Downloads\machines\lockers\locker3.png">
+                        <collision-poly>
+                            <point x="0.0526316" y="0.0357143" />
+                            <point x="0.473684" y="0" />
+                            <point x="0.947368" y="0.0357143" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="maquina1" sid="897780225948948">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="476232256059979" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.515152" original-source="C:\Users\marco\Downloads\machines\machines\machine1.png">
+                        <collision-poly>
+                            <point x="0.5" y="0" />
+                            <point x="0.909091" y="0.0606061" />
+                            <point x="1" y="0.484848" />
+                            <point x="0.909091" y="0.939394" />
+                            <point x="0.5" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0.0909091" y="0.484848" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="maquina2" sid="361895572433517">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="983478152595567" speed="5">
+                    <frame duration="1" hotspotX="0.52381" hotspotY="0.5" original-source="C:\Users\marco\Downloads\machines\machines\machine2.png">
+                        <collision-poly>
+                            <point x="0.285714" y="0.107143" />
+                            <point x="0.47619" y="0" />
+                            <point x="0.857143" y="0.0535714" />
+                            <point x="0.904762" y="0.5" />
+                            <point x="0.904762" y="0.964286" />
+                            <point x="0.47619" y="0.946429" />
+                            <point x="0.285714" y="0.892857" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="maquina2var" sid="188135730923739">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="887230682261307" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\marco\Downloads\machines\machines\machine2_cable.png">
+                        <collision-poly>
+                            <point x="0.25" y="0.05" />
+                            <point x="0.5" y="0.491667" />
+                            <point x="0.375" y="0.125" />
+                            <point x="0.541667" y="0.5" />
+                            <point x="0.916667" y="0.983333" />
+                            <point x="0.5" y="0.975" />
+                            <point x="0.291667" y="0.941667" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="maquina3" sid="421742099876310">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="328976719037269" speed="5">
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.5" original-source="C:\Users\marco\Downloads\machines\machines\machine3.png">
+                        <collision-poly>
+                            <point x="0.0689655" y="0.0625" />
+                            <point x="0.482759" y="0" />
+                            <point x="0.793103" y="0.1875" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="maquina4" sid="356054134084901">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="651130653793605" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\marco\Downloads\machines\machines\machine4.png">
+                        <collision-poly>
+                            <point x="0.1875" y="0.1" />
+                            <point x="0.5" y="0.0333333" />
+                            <point x="1" y="0" />
+                            <point x="1" y="1" />
+                            <point x="0.5" y="0.866667" />
+                            <point x="0.0625" y="0.966667" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="item_cdf_azul" sid="513034140307741">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="570679237773832" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.555556" original-source="C:\Users\marco\Downloads\machines\tools\blue_screwdriver.png">
+                        <collision-poly>
+                            <point x="0.05" y="0.111111" />
+                            <point x="0.5" y="0.333333" />
+                            <point x="0.9" y="0.222222" />
+                            <point x="1" y="0.444444" />
+                            <point x="0.9" y="0.777778" />
+                            <point x="0.5" y="0.666667" />
+                            <point x="0.05" y="0.888889" />
+                            <point x="0" y="0.444444" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="item_cabo" sid="592561173612620">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="903172421407667" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.538462" original-source="C:\Users\marco\Downloads\machines\tools\cable.png">
+                        <collision-poly>
+                            <point x="0.277778" y="0.384615" />
+                            <point x="0.5" y="0.307692" />
+                            <point x="0.833333" y="0.230769" />
+                            <point x="1" y="0.461538" />
+                            <point x="0.888889" y="0.846154" />
+                            <point x="0.5" y="0.923077" />
+                            <point x="0.0555556" y="0.923077" />
+                            <point x="0.166667" y="0.461538" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="item_cdf_ver" sid="788601091112307">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="311081552333066" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.6" original-source="C:\Users\marco\Downloads\machines\tools\red_screwdriver.png">
+                        <collision-poly>
+                            <point x="0.0454545" y="0.2" />
+                            <point x="0.5" y="0" />
+                            <point x="0.954545" y="0.2" />
+                            <point x="1" y="0.4" />
+                            <point x="0.954545" y="0.8" />
+                            <point x="0.5" y="1" />
+                            <point x="0.0454545" y="0.8" />
+                            <point x="0" y="0.4" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="item_fita" sid="589309232278321">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="196919890823680" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\marco\Downloads\machines\tools\tape.png">
+                        <collision-poly>
+                            <point x="0.166667" y="0.1" />
+                            <point x="0.5" y="0" />
+                            <point x="0.916667" y="0.05" />
+                            <point x="0.916667" y="0.5" />
+                            <point x="0.5" y="0.7" />
+                            <point x="0.5" y="0.65" />
+                            <point x="0.0833333" y="0.95" />
+                            <point x="0.25" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="item_oleo" sid="204663018771616">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="825176879069946" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\marco\Downloads\machines\tools\Woil.png">
+                        <collision-poly>
+                            <point x="0.125" y="0.0714286" />
+                            <point x="0.5" y="0" />
+                            <point x="0.875" y="0.0714286" />
+                            <point x="1" y="0.5" />
+                            <point x="0.875" y="0.928571" />
+                            <point x="0.5" y="1" />
+                            <point x="0.125" y="0.928571" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="item_ci" sid="391450281171924">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="656309645172246" speed="5">
+                    <frame duration="1" hotspotX="0.517241" hotspotY="0.533333" original-source="C:\Users\marco\Downloads\machines\tools\wrench.png">
+                        <collision-poly>
+                            <point x="0.275862" y="0.533333" />
+                            <point x="0.965517" y="0.0666667" />
+                            <point x="0.965517" y="0.466667" />
+                            <point x="0.793103" y="0.6" />
+                            <point x="0.0344828" y="0.933333" />
+                            <point x="0.37931" y="0.466667" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="NPC" sid="266884726514838">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="codigo" sid="420112878467404" type="string" />
+                <instance-variable name="falou" sid="214710901245419" type="number" />
+                <instance-variable name="conta" sid="217063788637603" type="number" />
+            </instance-variables>
+            <behaviors>
+                <behavior-type name="Solid" sid="450052598833482">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Joseph" pingpong="0" repeatcount="1" repeatto="0" sid="385320961203040" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Rene" pingpong="0" repeatcount="1" repeatto="0" sid="232878985223895" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Marina" pingpong="0" repeatcount="1" repeatto="0" sid="957449416244090" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Celia" pingpong="0" repeatcount="1" repeatto="0" sid="254116686489463" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="esteira_reta" sid="658692081115452">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="632523456038399">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="809099744771166" speed="5">
+                    <frame duration="1" hotspotX="0.328125" hotspotY="0.571429" original-source="C:\Users\marco\Downloads\machines\tilesets\Nova pasta\conveyor belt straight.png">
+                        <collision-poly>
+                            <point x="0" y="0.330175" />
+                            <point x="0.319275" y="0" />
+                            <point x="0.974243" y="0" />
+                            <point x="0.974243" y="1" />
+                            <point x="0.319275" y="1" />
+                            <point x="0" y="0.522959" />
+                            <point x="0" y="0.522959" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="esteira_te" sid="137120639635847">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="595069525092888">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="631013236363979" speed="5">
+                    <frame duration="1" hotspotX="-0.235294" hotspotY="0.5" original-source="C:\Users\marco\Downloads\machines\tilesets\Nova pasta\conveyor belt turn.png">
+                        <collision-poly>
+                            <point x="0.705882" y="0.25" />
+                            <point x="0.941176" y="0.5" />
+                            <point x="0.941176" y="0.95" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Iris_alcance" sid="930553135899603">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="933425060881828" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="esteira_baixo" sid="254317798748878">
+            <plugin id="Sprite" />
+            <behaviors>
+                <behavior-type name="Solid" sid="523250829322122">
+                    <behavior id="solid" />
+                </behavior-type>
+            </behaviors>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="707103169199351" speed="5">
+                    <frame duration="1" hotspotX="-0.545455" hotspotY="0.521739" original-source="C:\Users\marco\Downloads\machines\tilesets\Nova pasta\conveyor belt straight down.png">
+                        <collision-poly>
+                            <point x="0" y="0.26087" />
+                            <point x="0.909091" y="0.0869565" />
+                            <point x="0.909091" y="0.956522" />
+                            <point x="0" y="0.695652" />
+                            <point x="0" y="0.521739" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CaixaDialogo" sid="579619760094556">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="278532652324149" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\marco\Downloads\machines\caixa_dialogo_640x164.png">
+                        <collision-poly>
+                            <point x="0.0296875" y="0.115854" />
+                            <point x="0.5" y="0" />
+                            <point x="0.970312" y="0.115854" />
+                            <point x="1" y="0.5" />
+                            <point x="1" y="1" />
+                            <point x="0" y="1" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CD_TagNome" sid="977888739638263">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="570823238878741" speed="5">
+                    <frame duration="1" hotspotX="0.507246" hotspotY="0.53125" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CD_TextoNome" sid="289944046365785">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="CD_TextoDialogo" sid="125782167389246">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="CD_Retrato" sid="541310522328131">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="742937682363629" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+                <animation framecount="1" loop="0" name="Iris" pingpong="0" repeatcount="1" repeatto="0" sid="329820197790706" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\marco\Downloads\machines\iris_neutra_250x400.png">
+                        <collision-poly>
+                            <point x="0.412" y="0.2575" />
+                            <point x="0.5" y="0.01" />
+                            <point x="0.856" y="0.09" />
+                            <point x="0.936" y="0.5" />
+                            <point x="0.972" y="0.9825" />
+                            <point x="0.5" y="1" />
+                            <point x="0.292" y="0.8175" />
+                            <point x="0.096" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CD_OpcaoA" sid="545334973306156">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="711335349321284" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CD_OpcaoB" sid="874978668398500">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="2" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="954287164705496" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.52" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="CD_TextoOpA" sid="573699073760203">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="CD_TextoOpB" sid="253611263344562">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="CD_DicaEspaco" sid="131411326968373">
+            <plugin id="Text" />
+        </object-type>
+        <object-type global="1" name="Falas" sid="375205389135518">
+            <plugin id="Dictionary" />
+        </object-type>
+        <object-type global="1" name="Vol" sid="868482485418718">
+            <plugin id="Arr" />
+        </object-type>
+        <object-type name="AJAX" sid="510966443286751">
+            <plugin id="AJAX" />
+        </object-type>
+        <object-type name="Function" sid="280622483991356">
+            <plugin id="Function" />
+        </object-type>
+        <object-type name="Mouse" sid="547962052347418">
+            <plugin id="Mouse" />
+        </object-type>
+        <object-type name="Audio" sid="874497270362440">
+            <plugin id="Audio" />
+        </object-type>
+        <object-type name="DicaE" sid="366945036228213">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="722427470314918" speed="5">
+                    <frame duration="1" hotspotX="0.516129" hotspotY="0.517241" original-source="C:\Users\marco\Downloads\machines\e.png">
+                        <collision-poly>
+                            <point x="0.0967742" y="0.103448" />
+                            <point x="0.5" y="0" />
+                            <point x="0.903226" y="0.103448" />
+                            <point x="0.983871" y="0.5" />
+                            <point x="0.919355" y="0.913793" />
+                            <point x="0.5" y="0.982759" />
+                            <point x="0.0806452" y="0.913793" />
+                            <point x="0" y="0.5" />
+                        </collision-poly>
+                    </frame>
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Porta_FDD" sid="714518600321959">
+            <plugin id="Sprite" />
+            <instance-variables>
+                <instance-variable name="destino" sid="204648009480919" type="string" />
+                <instance-variable name="avancaDia" sid="134735100237827" type="number" />
+                <instance-variable name="meta" sid="450571798507718" type="number" />
+            </instance-variables>
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="932129857967871" speed="5">
+                    <frame duration="1" hotspotX="0.514286" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="Escuro" sid="457062669379482">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="1" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="552202796300965" speed="5">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TransImg" sid="181281786483457">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="7" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="286509885074016" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\marco\Downloads\machines\fundo\WhatsApp Image 2026-11-17 at 22.58.47 (1).jpeg" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextoTransicao" sid="133081275641565">
+            <plugin id="Text" />
+        </object-type>
+        <object-type name="FinalImg" sid="325188952650360">
+            <plugin id="Sprite" />
+            <animation-folder>
+                <animation framecount="3" loop="0" name="Default" pingpong="0" repeatcount="1" repeatto="0" sid="216258802091785" speed="0">
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\marco\Downloads\machines\fundo\WhatsApp Image 2026-11-17 at 22.58.47 (1).jpeg" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\marco\Downloads\machines\fundo\WhatsApp Image 2026-11-17 at 22.58.47.jpeg" />
+                    <frame duration="1" hotspotX="0.5" hotspotY="0.5" original-source="C:\Users\marco\Downloads\machines\fundo\WhatsApp Image 2026-11-17 at 22.58.47 (3).jpeg" />
+                </animation>
+            </animation-folder>
+        </object-type>
+        <object-type name="TextoFinal" sid="862473691532986">
+            <plugin id="Text" />
+        </object-type>
+    </object-folder>
+    <families />
+    <layout-folder>
+        <layout>Jogo_Fabrica.xml</layout>
+        <layout>Transicao.xml</layout>
+        <layout>Final.xml</layout>
+        <layout>Menu.xml</layout>
+    </layout-folder>
+    <event-folder>
+        <event-sheet>Geral.xml</event-sheet>
+    </event-folder>
+    <global-instances>
+        <global-instance type="Keyboard" uid="2" />
+        <global-instance type="AJAX" uid="39" />
+        <global-instance type="Function" uid="40" />
+        <global-instance type="Mouse" uid="41" />
+        <global-instance type="Audio" uid="42">
+            <properties>
+                <timescale-audio>Off</timescale-audio>
+                <saveload>All</saveload>
+                <play-in-background>No</play-in-background>
+                <positioned-audio></positioned-audio>
+                <panning-model>HRTF</panning-model>
+                <distance-model>Inverse</distance-model>
+                <listener-z-height>600</listener-z-height>
+                <reference-distance>600</reference-distance>
+                <maximum-distance>10000</maximum-distance>
+                <roll-off-factor>1</roll-off-factor>
+            </properties>
+        </global-instance>
+    </global-instances>
+    <sounds-folder />
+    <music-folder />
+    <files-folder>
+        <file-folder name="Icons">
+            <file name="icon-16.png" />
+            <file name="icon-32.png" />
+            <file name="icon-114.png" />
+            <file name="icon-128.png" />
+            <file name="icon-256.png" />
+            <file name="loading-logo.png" />
+        </file-folder>
+        <file name="falas.json" />
+    </files-folder>
+</c2project>

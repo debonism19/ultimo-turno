@@ -1,0 +1,699 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2eventsheet>
+    <!--All the 'name' attributes are ignored by Construct 2 - they are there for readability only.-->
+    <name>Geral</name>
+    <events>
+        <variable constant="0" name="Colapso" sid="893651250617247" static="0" type="number">0</variable>
+        <variable constant="0" name="Nivel" sid="856687900711098" static="0" type="number">0</variable>
+        <variable constant="0" name="Dia" sid="226507391165097" static="0" type="number">1</variable>
+        <variable constant="0" name="EmDialogo" sid="370634437010300" static="0" type="number">0</variable>
+        <variable constant="0" name="Escolhendo" sid="158940584331410" static="0" type="number">0</variable>
+        <variable constant="0" name="Fala" sid="916218990350779" static="0" type="number">1</variable>
+        <variable constant="0" name="FalasConcluidas" sid="752230875058248" static="0" type="number">0</variable>
+        <variable constant="0" name="FadeDir" sid="644811176732918" static="0" type="number">0</variable>
+        <variable constant="0" name="PrimeiraVez" sid="665295736192232" static="0" type="number">1</variable>
+        <variable constant="0" name="NPCAtual" sid="194709924822076" static="0" type="text"></variable>
+        <variable constant="0" name="Chave" sid="620548222833055" static="0" type="text"></variable>
+        <variable constant="0" name="Letra" sid="203376272080317" static="0" type="text">A</variable>
+        <variable constant="0" name="Destino" sid="213600686012982" static="0" type="text"></variable>
+        <event-block sid="881919137708282">
+            <conditions>
+                <condition behavior="8Direction" id="0" name="Is moving" sid="801152832026558" type="Iris" />
+                <condition id="2" name="Key is down" sid="643178356832376" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="163930192057703" type="Iris">
+                    <param id="0" name="Animation">&quot;FrenteAndando&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="333307773435587">
+            <conditions>
+                <condition behavior="8Direction" id="0" name="Is moving" sid="196746445600787" type="Iris" />
+                <condition id="2" name="Key is down" sid="858297393702630" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="553287127016512" type="Iris">
+                    <param id="0" name="Animation">&quot;CostasAndando&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="876700558128387">
+            <conditions>
+                <condition behavior="8Direction" id="0" name="Is moving" sid="470026553934654" type="Iris" />
+                <condition id="2" name="Key is down" sid="780556174818516" type="Keyboard">
+                    <param id="0" name="Key">39</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="184199613500892" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="210828903322262" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="742372821536908" type="Iris">
+                    <param id="0" name="Animation">&quot;DireitaAndando&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="794672715043776">
+            <conditions>
+                <condition behavior="8Direction" id="0" name="Is moving" sid="403288701970642" type="Iris" />
+                <condition id="2" name="Key is down" sid="654794741517836" type="Keyboard">
+                    <param id="0" name="Key">37</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="337003294989831" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+                <condition id="2" inverted="1" name="Key is down" sid="962935185341132" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Set animation" sid="765020396394347" type="Iris">
+                    <param id="0" name="Animation">&quot;EsquerdaAndando&quot;</param>
+                    <param id="1" name="From">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="417501633086169">
+            <conditions>
+                <condition behavior="8Direction" id="1" name="Compare speed" sid="859373330929200" type="Iris">
+                    <param id="0" name="Comparison">2</param>
+                    <param id="1" name="Speed">5</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="821144697541926" type="Iris">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="137693637240957">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="101507593101504" type="System" />
+                <condition id="-8" name="Compare two values" sid="169080887263374" type="System">
+                    <param id="0" name="First value">Falas.KeyCount</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="0" name="Request URL" sid="597644429042749" type="AJAX">
+                    <param id="0" name="Tag">&quot;falas&quot;</param>
+                    <param id="1" name="URL">&quot;falas.json&quot;</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="531609429842418">
+            <conditions>
+                <condition id="0" name="On completed" sid="537567588226809" type="AJAX">
+                    <param id="0" name="Tag">&quot;falas&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="4" name="Load" sid="722764810175970" type="Falas">
+                    <param id="0" name="JSON">AJAX.LastData</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="100904629246738">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="898009414485634" type="System" />
+            </conditions>
+            <actions>
+                <action id="0" name="Call function" sid="283475182422520" type="Function">
+                    <param id="0" name="Name">&quot;AtualizaCenario&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="-9" name="Set value" sid="287835237070879" type="System">
+                    <param id="0" name="Variable">FadeDir</param>
+                    <param id="1" name="Value">-1</param>
+                </action>
+                <action behavior="8Direction" id="8" name="Set enabled" sid="811683275336543" type="Iris">
+                    <param id="0" name="State">1</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="427623177161113">
+            <conditions>
+                <condition id="0" name="On function" sid="882611374451913" type="Function">
+                    <param id="0" name="Name">&quot;AtualizaCenario&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="286344087317934" type="System">
+                    <param id="0" name="Variable">Nivel</param>
+                    <param id="1" name="Value">max(0, min(floor(Colapso/2), 2))</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="204556570937911">
+            <conditions>
+                <condition id="0" name="On function" sid="663993605158602" type="Function">
+                    <param id="0" name="Name">&quot;MostrarFala&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="552081540687709" type="System">
+                    <param id="0" name="Variable">Chave</param>
+                    <param id="1" name="Value">NPCAtual &amp; &quot;_d&quot; &amp; Dia &amp; &quot;_n&quot; &amp; Nivel &amp; &quot;_&quot; &amp; Fala</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="209684677627984">
+                    <conditions>
+                        <condition id="3" name="Has key" sid="702621784271911" type="Falas">
+                            <param id="0" name="Key">Chave</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="0" name="Set text" sid="149764085265425" type="CD_TextoDialogo">
+                            <param id="0" name="Text">Falas.Get(Chave)</param>
+                        </action>
+                        <action id="0" name="Set text" sid="451714522963146" type="CD_TextoNome">
+                            <param id="0" name="Text">Falas.Get(Chave &amp; &quot;_q&quot;)</param>
+                        </action>
+                        <action id="4" name="Set animation" sid="595736652992161" type="CD_Retrato">
+                            <param id="0" name="Animation">Falas.Get(Chave &amp; &quot;_q&quot;)</param>
+                            <param id="1" name="From">1</param>
+                        </action>
+                        <action id="-15" name="Set visible" sid="281437647910409" type="CD_TextoNome">
+                            <param id="0" name="Visibility">1</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="601381959284391">
+                            <conditions>
+                                <condition id="3" name="Has key" sid="515559439525004" type="Falas">
+                                    <param id="0" name="Key">Chave &amp; &quot;_A&quot;</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="785685983853914" type="System">
+                                    <param id="0" name="Variable">Escolhendo</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-9" name="Set value" sid="686638686272792" type="System">
+                                    <param id="0" name="Variable">Letra</param>
+                                    <param id="1" name="Value">&quot;A&quot;</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="458000780272430" type="CD_OpcaoA">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="350622588976290" type="CD_OpcaoB">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="904533851568827" type="CD_TextoOpA">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="449049575409275" type="CD_TextoOpB">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="0" name="Set text" sid="544519013707192" type="CD_TextoOpA">
+                                    <param id="0" name="Text">Falas.Get(Chave &amp; &quot;_A&quot;)</param>
+                                </action>
+                                <action id="0" name="Set text" sid="463445253329816" type="CD_TextoOpB">
+                                    <param id="0" name="Text">Falas.Get(Chave &amp; &quot;_B&quot;)</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="963788254342837" type="CD_OpcaoA">
+                                    <param id="0" name="Frame number">1</param>
+                                </action>
+                                <action id="5" name="Set frame" sid="693860868556153" type="CD_OpcaoB">
+                                    <param id="0" name="Frame number">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="270360160942891" type="CD_DicaEspaco">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                        <event-block sid="247645651024409">
+                            <conditions>
+                                <condition id="-22" name="Else" sid="751312677163064" type="System" />
+                            </conditions>
+                            <actions>
+                                <action id="-9" name="Set value" sid="248097673559674" type="System">
+                                    <param id="0" name="Variable">Escolhendo</param>
+                                    <param id="1" name="Value">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="119660682156243" type="CD_DicaEspaco">
+                                    <param id="0" name="Visibility">1</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="425623011434164" type="CD_OpcaoA">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="883667656971907" type="CD_OpcaoB">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="263815002301954" type="CD_TextoOpA">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                                <action id="-15" name="Set visible" sid="765906082813170" type="CD_TextoOpB">
+                                    <param id="0" name="Visibility">0</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+                <event-block sid="561905264956697">
+                    <conditions>
+                        <condition id="-22" name="Else" sid="326538732129222" type="System" />
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="829473849482253" type="System">
+                            <param id="0" name="Variable">EmDialogo</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action id="-9" name="Set value" sid="840345755683022" type="System">
+                            <param id="0" name="Variable">Escolhendo</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                        <action behavior="8Direction" id="8" name="Set enabled" sid="922479378072795" type="Iris">
+                            <param id="0" name="State">1</param>
+                        </action>
+                        <action id="-4" name="Set layer visible" sid="443696610459786" type="System">
+                            <param id="0" name="Layer">&quot;UI&quot;</param>
+                            <param id="1" name="Visibility">0</param>
+                        </action>
+                    </actions>
+                    <sub-events>
+                        <event-block sid="390029553972920">
+                            <conditions>
+                                <condition id="-7" name="Compare instance variable" sid="771985948978520" type="NPC">
+                                    <param id="0" name="Instance variable">codigo</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">NPCAtual</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="543276387916695" type="NPC">
+                                    <param id="0" name="Instance variable">falou</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">0</param>
+                                </condition>
+                                <condition id="-7" name="Compare instance variable" sid="965384020909499" type="NPC">
+                                    <param id="0" name="Instance variable">conta</param>
+                                    <param id="1" name="Comparison">0</param>
+                                    <param id="2" name="Value">1</param>
+                                </condition>
+                            </conditions>
+                            <actions>
+                                <action id="-11" name="Add to" sid="529648133670702" type="NPC">
+                                    <param id="0" name="Instance variable">falou</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                                <action id="-10" name="Add to" sid="641363598954441" type="System">
+                                    <param id="0" name="Variable">FalasConcluidas</param>
+                                    <param id="1" name="Value">1</param>
+                                </action>
+                            </actions>
+                        </event-block>
+                    </sub-events>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="810564654413661">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="170769106464763" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="164788517524491" type="System">
+                    <param id="0" name="Variable">EmDialogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="252761072548444" type="System">
+                    <param id="0" name="Variable">Escolhendo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="949932663183198" type="System">
+                    <param id="0" name="Variable">Fala</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Call function" sid="695414470240171" type="Function">
+                    <param id="0" name="Name">&quot;MostrarFala&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="975835872358036">
+            <conditions>
+                <condition id="-1" name="Every tick" sid="796471264354667" type="System" />
+            </conditions>
+            <actions>
+                <action id="-3" name="Set position" sid="658041243671993" type="Iris_alcance">
+                    <param id="0" name="X">Iris.X</param>
+                    <param id="1" name="Y">Iris.Y</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="195000011653922">
+            <conditions>
+                <condition id="1" name="Is overlapping another object" sid="821775617196916" type="Iris_alcance">
+                    <param id="0" name="Object">NPC</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="253427607721589" type="System">
+                    <param id="0" name="Variable">EmDialogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="667928296733309" type="DicaE">
+                    <param id="0" name="Visibility">1</param>
+                </action>
+                <action id="-3" name="Set position" sid="468807018227604" type="DicaE">
+                    <param id="0" name="X">NPC.X</param>
+                    <param id="1" name="Y">NPC.Y - 35</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="630960735423461">
+            <conditions>
+                <condition id="-22" name="Else" sid="734688123043003" type="System" />
+            </conditions>
+            <actions>
+                <action id="-15" name="Set visible" sid="649263366352749" type="DicaE">
+                    <param id="0" name="Visibility">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="565564446224986">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="140636475790812" type="System">
+                    <param id="0" name="First value">FadeDir</param>
+                    <param id="1" name="Comparison">1</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-16" name="Set opacity" sid="345591032469746" type="Escuro">
+                    <param id="0" name="Opacity">Escuro.Opacity + FadeDir * 250 * dt</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="878093768902996">
+                    <conditions>
+                        <condition id="-10" name="Compare opacity" sid="798311224306036" type="Escuro">
+                            <param id="0" name="Comparison">5</param>
+                            <param id="1" name="Opacity">99</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="640064907138944" type="System">
+                            <param id="0" name="First value">FadeDir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-25" name="Go to layout (by name)" sid="286725627999194" type="System">
+                            <param id="0" name="Layout">Destino</param>
+                        </action>
+                    </actions>
+                </event-block>
+                <event-block sid="439643993631802">
+                    <conditions>
+                        <condition id="-10" name="Compare opacity" sid="217106108502482" type="Escuro">
+                            <param id="0" name="Comparison">3</param>
+                            <param id="1" name="Opacity">1</param>
+                        </condition>
+                        <condition id="-8" name="Compare two values" sid="746557236592148" type="System">
+                            <param id="0" name="First value">FadeDir</param>
+                            <param id="1" name="Comparison">0</param>
+                            <param id="2" name="Second value">-1</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="487512491268069" type="System">
+                            <param id="0" name="Variable">FadeDir</param>
+                            <param id="1" name="Value">0</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="107146435473157">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="376771180530077" type="Keyboard">
+                    <param id="0" name="Key">69</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="861200103473166" type="System">
+                    <param id="0" name="Variable">EmDialogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="546410210234043" type="System">
+                    <param id="0" name="Variable">Escolhendo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-10" name="Add to" sid="259673031009063" type="System">
+                    <param id="0" name="Variable">Colapso</param>
+                    <param id="1" name="Value">Falas.Get(Chave &amp; &quot;_&quot; &amp; Letra &amp; &quot;_v&quot;)</param>
+                </action>
+                <action id="-9" name="Set value" sid="889813645699071" type="System">
+                    <param id="0" name="Variable">Escolhendo</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-10" name="Add to" sid="387727087186441" type="System">
+                    <param id="0" name="Variable">Fala</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="0" name="Call function" sid="774328168502541" type="Function">
+                    <param id="0" name="Name">&quot;AtualizaCenario&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+                <action id="0" name="Call function" sid="363605167191351" type="Function">
+                    <param id="0" name="Name">&quot;MostrarFala&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="800203372010249">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="362207324853005" type="Keyboard">
+                    <param id="0" name="Key">38</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="441282494624453" type="System">
+                    <param id="0" name="Variable">Escolhendo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="935223511083771" type="System">
+                    <param id="0" name="Variable">Letra</param>
+                    <param id="1" name="Value">&quot;A&quot;</param>
+                </action>
+                <action id="5" name="Set frame" sid="258143161552815" type="CD_OpcaoA">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="292866745716991" type="CD_OpcaoB">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="313991534955411">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="979566961710837" type="Keyboard">
+                    <param id="0" name="Key">40</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="769277500999522" type="System">
+                    <param id="0" name="Variable">Escolhendo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">1</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="579318390823540" type="System">
+                    <param id="0" name="Variable">Letra</param>
+                    <param id="1" name="Value">&quot;B&quot;</param>
+                </action>
+                <action id="5" name="Set frame" sid="662105520383535" type="CD_OpcaoB">
+                    <param id="0" name="Frame number">1</param>
+                </action>
+                <action id="5" name="Set frame" sid="504471935105602" type="CD_OpcaoA">
+                    <param id="0" name="Frame number">0</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="168136343655967">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="542407009888923" type="Keyboard">
+                    <param id="0" name="Key">69</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="305300215425049" type="System">
+                    <param id="0" name="Variable">EmDialogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="140426695384702" type="Iris_alcance">
+                    <param id="0" name="Object">NPC</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="940622283822177" type="System">
+                    <param id="0" name="First value">FadeDir</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="921191189841552" type="System">
+                    <param id="0" name="Variable">NPCAtual</param>
+                    <param id="1" name="Value">NPC.codigo &amp; left(&quot;_repete&quot;, (NPC.falou = 1) * 7)</param>
+                </action>
+                <action id="-9" name="Set value" sid="760628916471599" type="System">
+                    <param id="0" name="Variable">Fala</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action id="-9" name="Set value" sid="434249776806588" type="System">
+                    <param id="0" name="Variable">EmDialogo</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="8Direction" id="8" name="Set enabled" sid="939699725341285" type="Iris">
+                    <param id="0" name="State">0</param>
+                </action>
+                <action id="-4" name="Set layer visible" sid="447182168913722" type="System">
+                    <param id="0" name="Layer">&quot;UI&quot;</param>
+                    <param id="1" name="Visibility">1</param>
+                </action>
+                <action id="0" name="Call function" sid="281427965695753" type="Function">
+                    <param id="0" name="Name">&quot;MostrarFala&quot;</param>
+                    <param id="1" name="Parameter {n}"></param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="661420042238531">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="307782550386637" type="Keyboard">
+                    <param id="0" name="Key">69</param>
+                </condition>
+                <condition id="-14" name="Compare variable" sid="108874108935603" type="System">
+                    <param id="0" name="Variable">EmDialogo</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Value">0</param>
+                </condition>
+                <condition id="1" name="Is overlapping another object" sid="599959578370913" type="Iris_alcance">
+                    <param id="0" name="Object">Porta_FDD</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="707388435356716" type="System">
+                    <param id="0" name="First value">FalasConcluidas</param>
+                    <param id="1" name="Comparison">5</param>
+                    <param id="2" name="Second value">Porta_FDD.meta</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="100412135105672" type="System">
+                    <param id="0" name="First value">FadeDir</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">0</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="438530821776900" type="System">
+                    <param id="0" name="Variable">Dia</param>
+                    <param id="1" name="Value">Dia + Porta_FDD.avancaDia</param>
+                </action>
+                <action id="-9" name="Set value" sid="108227455391220" type="System">
+                    <param id="0" name="Variable">FalasConcluidas</param>
+                    <param id="1" name="Value">FalasConcluidas * (1 - Porta_FDD.avancaDia)</param>
+                </action>
+                <action id="-9" name="Set value" sid="778621864470556" type="System">
+                    <param id="0" name="Variable">Destino</param>
+                    <param id="1" name="Value">Porta_FDD.destino</param>
+                </action>
+                <action id="-9" name="Set value" sid="594835706483526" type="System">
+                    <param id="0" name="Variable">FadeDir</param>
+                    <param id="1" name="Value">1</param>
+                </action>
+                <action behavior="8Direction" id="8" name="Set enabled" sid="157222132764352" type="Iris">
+                    <param id="0" name="State">0</param>
+                </action>
+            </actions>
+            <sub-events>
+                <event-block sid="123056735979837">
+                    <conditions>
+                        <condition id="-14" name="Compare variable" sid="600762710630928" type="System">
+                            <param id="0" name="Variable">Dia</param>
+                            <param id="1" name="Comparison">4</param>
+                            <param id="2" name="Value">4</param>
+                        </condition>
+                    </conditions>
+                    <actions>
+                        <action id="-9" name="Set value" sid="256330426451958" type="System">
+                            <param id="0" name="Variable">Destino</param>
+                            <param id="1" name="Value">&quot;Final&quot;</param>
+                        </action>
+                    </actions>
+                </event-block>
+            </sub-events>
+        </event-block>
+        <event-block sid="499870976822348">
+            <conditions>
+                <condition id="-8" name="Compare two values" sid="169846015350721" type="System">
+                    <param id="0" name="First value">LayoutName</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;Transicao&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="963154713683411" type="TransImg">
+                    <param id="0" name="Frame number">(Dia &gt; 1) * (1 + (Dia - 2) * 2 + (Nivel &gt;= 1))</param>
+                </action>
+                <action id="0" name="Set text" sid="866930017204829" type="TextoTransicao">
+                    <param id="0" name="Text">&quot;Dia &quot; &amp; (Dia)</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="276213680460050">
+            <conditions>
+                <condition id="0" name="On key pressed" sid="309324017495574" type="Keyboard">
+                    <param id="0" name="Key">32</param>
+                </condition>
+                <condition id="-8" name="Compare two values" sid="570456721869363" type="System">
+                    <param id="0" name="First value">LayoutName</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;Transicao&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="-9" name="Set value" sid="377861490772100" type="System">
+                    <param id="0" name="Variable">FadeDir</param>
+                    <param id="1" name="Value">0</param>
+                </action>
+                <action id="-9" name="Set value" sid="255184402467377" type="System">
+                    <param id="0" name="Variable">Destino</param>
+                    <param id="1" name="Value">&quot;Jogo_Fabrica&quot;</param>
+                </action>
+                <action id="-2" name="Go to layout" sid="287206783420455" type="System">
+                    <param id="0" name="Layout">Jogo_Fabrica</param>
+                </action>
+            </actions>
+        </event-block>
+        <event-block sid="586897298871728">
+            <conditions>
+                <condition id="-2" name="On start of layout" sid="811675466144427" type="System" />
+                <condition id="-8" name="Compare two values" sid="172680624061287" type="System">
+                    <param id="0" name="First value">LayoutName</param>
+                    <param id="1" name="Comparison">0</param>
+                    <param id="2" name="Second value">&quot;Final&quot;</param>
+                </condition>
+            </conditions>
+            <actions>
+                <action id="5" name="Set frame" sid="669781428609645" type="FinalImg">
+                    <param id="0" name="Frame number">(Colapso &gt;= 2) + (Colapso &gt;= 6)</param>
+                </action>
+                <action id="0" name="Set text" sid="773251220709612" type="TextoFinal">
+                    <param id="0" name="Text">Falas.Get(&quot;final_&quot; &amp; ((Colapso &gt;= 2) + (Colapso &gt;= 6)))</param>
+                </action>
+            </actions>
+        </event-block>
+    </events>
+</c2eventsheet>

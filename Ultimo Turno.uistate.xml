@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<c2uistate>
+    <!--This is a UI state file - its content describes the user interface settings when the project was last open.
+It is entirely optional and the project will load without it.  If you are placing the project under source control,
+you probably do not want to add any .uistate.xml files to the repository.-->
+    <configurations>
+        <active>
+            <configuration name="HTML5" />
+        </active>
+        <display name="HTML5" />
+    </configurations>
+    <open-tabs>
+        <layout order="0">Jogo_Fabrica</layout>
+        <layout order="2">Transicao</layout>
+        <layout order="3">Final</layout>
+        <event-sheet active="1" order="1">Geral</event-sheet>
+    </open-tabs>
+    <properties>
+        <property expanded="1" name="About" />
+        <property expanded="1" name="Project settings" />
+        <property expanded="0" name="Window Size" />
+        <property expanded="1" name="Configuration Settings" />
+    </properties>
+    <families-expanded root="1" />
+    <folders-expanded>
+        <folder expanded="1" path="object-folder/" />
+        <folder expanded="1" path="layout-folder/" />
+        <folder expanded="1" path="event-folder/" />
+        <folder expanded="1" path="file-folder/" />
+        <folder expanded="1" path="sound-folder/" />
+        <folder expanded="1" path="music-folder/" />
+        <folder expanded="0" path="file-folder/Icons/" />
+        <folder expanded="1" path="animation-folder/Iris/" />
+        <folder expanded="1" path="animation-folder/armario1/" />
+        <folder expanded="1" path="animation-folder/armario2/" />
+        <folder expanded="1" path="animation-folder/armario3/" />
+        <folder expanded="1" path="animation-folder/maquina1/" />
+        <folder expanded="1" path="animation-folder/maquina2/" />
+        <folder expanded="1" path="animation-folder/maquina2var/" />
+        <folder expanded="1" path="animation-folder/maquina3/" />
+        <folder expanded="1" path="animation-folder/maquina4/" />
+        <folder expanded="1" path="animation-folder/item_cdf_azul/" />
+        <folder expanded="1" path="animation-folder/item_cabo/" />
+        <folder expanded="1" path="animation-folder/item_cdf_ver/" />
+        <folder expanded="1" path="animation-folder/item_fita/" />
+        <folder expanded="1" path="animation-folder/item_oleo/" />
+        <folder expanded="1" path="animation-folder/item_ci/" />
+        <folder expanded="1" path="animation-folder/NPC/" />
+        <folder expanded="1" path="animation-folder/esteira_reta/" />
+        <folder expanded="1" path="animation-folder/esteira_te/" />
+        <folder expanded="1" path="animation-folder/Iris_alcance/" />
+        <folder expanded="1" path="animation-folder/esteira_baixo/" />
+        <folder expanded="1" path="animation-folder/CaixaDialogo/" />
+        <folder expanded="1" path="animation-folder/CD_TagNome/" />
+        <folder expanded="1" path="animation-folder/CD_Retrato/" />
+        <folder expanded="1" path="animation-folder/CD_OpcaoA/" />
+        <folder expanded="1" path="animation-folder/CD_OpcaoB/" />
+        <folder expanded="1" path="animation-folder/DicaE/" />
+        <folder expanded="1" path="animation-folder/Porta_FDD/" />
+        <folder expanded="1" path="animation-folder/Escuro/" />
+        <folder expanded="1" path="animation-folder/TransImg/" />
+        <folder expanded="1" path="animation-folder/FinalImg/" />
+    </folders-expanded>
+</c2uistate>
